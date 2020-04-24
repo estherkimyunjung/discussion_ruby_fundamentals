@@ -1,4 +1,3 @@
-
 class Bicycle
  
   attr_reader :tire, :style
@@ -14,10 +13,6 @@ class Bicycle
     @@styles << self.style
   end
    
-  def self.all
-    @@all
-  end
-  
   def tire_size
     self.tire
   end
@@ -34,6 +29,9 @@ class Bicycle
     @@styles
   end
 
+  def self.all
+    @@all
+  end
 end
    
 mongoose = Bicycle.new(4, 10, "BMX")
